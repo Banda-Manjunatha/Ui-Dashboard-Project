@@ -1,0 +1,22 @@
+.side-container {
+  @apply flex  flex-col w-[10%];
+}
+
+.dashboard-container {
+  @apply flex flex-col w-[100%]   items-start;
+}
+.dashboard-container p {
+  @apply font-bold w-[90%] mx-auto text-xs text-gray-400 pt-2;
+}
+.dashboard-container ul {
+  @apply shadow-md border w-[90%] flex items-center flex-col rounded-lg overflow-hidden mx-auto text-gray-500 font-bold text-xs;
+}
+.dashboard-container ul li {
+  @apply flex items-center flex-col border-b-2 w-full p-[7px] cursor-pointer;
+}
+.dashboard-container ul li img {
+  @apply h-8;
+}
+.selected {
+  @apply bg-green-600 text-white;
+}

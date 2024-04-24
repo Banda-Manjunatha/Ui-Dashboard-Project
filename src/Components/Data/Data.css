@@ -1,0 +1,82 @@
+.data-container {
+  @apply w-[90%] bg-blue-50 p-2 flex flex-col gap-2;
+}
+.heading-box {
+  @apply h-[40px]  flex items-center text-green-500 w-fit border-b-2
+  border-b-green-500 font-semibold;
+}
+.heading-box img {
+  @apply h-[35px];
+}
+.filter-container {
+  @apply flex h-[50px] bg-white items-center rounded-lg overflow-hidden gap-6 text-sm font-semibold text-gray-500;
+}
+/* .filter-container p {
+  @apply bg-green-600 align-middle h-full flex items-center px-4 font-semibold text-white;
+} */
+.filter-container p {
+  width: 70px;
+  height: 40px;
+  background: rgb(6, 161, 14);
+  color: white;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.filter-container p:before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 12px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 16px solid rgb(6, 161, 14);
+  border-bottom: 8px solid transparent;
+}
+.filter-container select {
+  @apply border-2 h-[40px] rounded-[25px] pl-1 pr-16  outline-none;
+}
+.filter-container input {
+  @apply h-6 w-6 text-lg accent-green-500;
+}
+.input-box {
+  @apply flex items-center gap-3;
+}
+.sec-container {
+  @apply flex justify-between;
+}
+.sec1 {
+  @apply h-[90px] border-l-4 border-l-orange-100 flex w-[23%] bg-white px-4  justify-between font-bold items-center rounded-lg;
+}
+.sec1 img {
+  @apply h-11;
+}
+.table-container {
+  @apply bg-white p-6 pb-0 flex flex-col gap-4;
+}
+.table-heading {
+  @apply flex items-center justify-between font-bold opacity-90;
+}
+.table-images {
+  @apply flex gap-4;
+}
+.table-images img {
+  @apply h-9 cursor-pointer;
+}
+.table {
+  @apply w-full;
+}
+
+.table tr th {
+  @apply border-2 border-collapse border-gray-200 opacity-70 p-2 tracking-wider;
+}
+.table tr td {
+  @apply border-2 border-collapse border-gray-200 opacity-70 p-3 text-center text-sm font-semibold tracking-normal;
+}
