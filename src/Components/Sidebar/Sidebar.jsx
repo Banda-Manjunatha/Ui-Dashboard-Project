@@ -8,7 +8,6 @@ import reg from "../../Assets/registration.png";
 import file from "../../Assets/file.png";
 import tests from "../../Assets/tests.png";
 import bill from "../../Assets/billing.png";
-import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [selectedOption, setSelectedOption] = useState(2);
